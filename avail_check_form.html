@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index_Form</title>
+
+	
+	<link rel="stylesheet" type="text/css" href="../own_project/avail_check_style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $(function () {
+          $(".date").datepicker();
+      });
+  </script>
+
+
+</head>
+<body>
+
+	<section class="main">
+		<h1 class="title">Availability Check</h1>
+		<form name="myform" action="#" method="get">
+			<div class="main-box">
+				<div class="input-box">
+					<span class="text">From</span>
+                    <select required name='from'>
+                        <option value="">Select location...</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Trichy">Trichy</option>
+                        <option value="Tripur">Tripur</option>
+                        <option value="Bengalore">Bengalore</option>
+                        <option value="Hydrabad">Hydrabad</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+				</div>
+
+                <div class="input-box">
+					<span class="text">To</span>
+                    <select required name='to'>
+                        <option value="">Select location...</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Trichy">Trichy</option>
+                        <option value="Tripur">Tripur</option>
+                        <option value="Bengalore">Bengalore</option>
+                        <option value="Hydrabad">Hydrabad</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+				</div>
+
+				<div class="input-box">
+					<span class="text">Departure date</span>
+					<input type="text" name="departure" class="form-control date" id="departure" placeholder="Select date..." required>
+				</div>
+
+				<div class="input-box">
+					<span class="text">Return date</span>
+					<input name="return" type="text" class="form-control date" id="return" placeholder="Select date..."  required>
+				</div>
+				
+				<div class="input-box">
+					<span class="text">Trip Type</span>
+                    <select id="tripType" name="tripType" required>
+                        <option value="">Select trip...</option>
+                        <option value="Round">Round</option>
+                        <option value="OneWay">OneWay</option>
+                    </select><br>
+				</div>
+
+				<div class="input-box">
+					<span class="text">Class </span>
+					<select id="Class" name="class" required>
+                        <option value="">Select class...</option>
+                        <option value="Economy">Economy</option>
+                        <option value="Business">Business</option>
+					</select>
+				</div>
+			</div>
+			<div class="btn">
+				<input type="submit" id="form-submit" value="Order Ticket Now">
+			</div>
+		</form>
+	</section>
+
+</body>
+</html>

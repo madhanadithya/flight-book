@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="../own_project/index_style.css">
+    <style>
+        .custom-link-left {
+            font-size: 12px;
+            text-align: left;
+            color: white;
+            opacity: .7;
+        }
+    
+        .custom-link-right {
+            font-size: 12px;
+            text-align: right;
+            color: white;
+            opacity: .7;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="../own_project/login.php" method="post">
+        <h1>LOGIN</h1>
+        <select id="loginType" name="loginType">
+            <option value="user">User Login</option>
+            <option value="admin">Admin Login</option>
+        </select><br>
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter your username" required>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <button>Login</button>
+        <div style="text-align: center;">
+            <a id="forgotPasswordLink" class="custom-link-left" href="../own_project/forgot_pwd.html">Forget Password?</a>
+            <span style="margin: 0 15px;"></span>
+            <a id="registrationLink" class="custom-link-right" href="../own_project/resgistration.html">New Registration?</a>
+        </div>
+    </form>
+</body>
+</html>
